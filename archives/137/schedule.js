@@ -30,7 +30,7 @@ class CalendarTable extends HTMLElement {
     }
     connectedCallback() {
         this.appendChild(this.table);
-        const url = new URL('/calendar.json');
+        const url = new URL('https://img.thirdcake.com/calendar/item.json');
         const date = new Date();
         const param = `${date.getMonth() + 1}-${date.getDate()}`;
         url.searchParams.set('d', param);

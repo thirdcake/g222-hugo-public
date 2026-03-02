@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP でダイクストラ法をつくる | つつじ行政書士事務所</title><link rel="stylesheet" href="/css/bootstrap.min.css">
+            <link rel="stylesheet" href="/css/main.min.5d5ec883778a2f0ca7e5e0cb45501c44f2a93e17878767adccf2eb52dddbe184.css" integrity="sha256-XV7Ig3eKLwyn5eDLRVAcRPKpPheHh2etzPLrUt3b4YQ=" crossorigin="anonymous">
+<script defer src="/js/bootstrap.min.js"></script>
+            <script defer src="/js/main.68ff67fb4490d3507c69c467619b1f946c5c902c52e0f63d70a6b8b132e47ca1.js" integrity="sha256-aP9n&#43;0SQ01B8acRnYZsflGxckCxS4PY9cKa4sTLkfKE=" crossorigin="anonymous"></script>
+
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+    <div class="container g222-container">
+        <header class="g222-header">
+            <div class="py-5">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column justify-content-start align-items-start">
+            <a href="/" class="">
+                <img src="/favicon.svg" width="1" height="1"
+                    style="width:80px;height:auto;"
+                    class="rounded" alt="">
+            </a>
+            <div class="d-flex flex-nowrap justify-content-start align-items-end">
+                <h1 class="g222-site-title">つつじ行政書士事務所</h1>
+                <color-mode></color-mode>
+            </div>
+        </div>
+        <div class="d-lg-none">
+            <button type="button" class="btn btn-outline-secondary"
+                data-bs-toggle="collapse" data-bs-target="#collapseNav"
+                aria-expanded="false" aria-label="Toggle navigation"
+                aria-controls="collapseNav">
+                <svg viewBox="0 0 16 16" style="width:1.5em;height:auto;">
+                    <use href="/img/icon.svg#menu"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="collapse d-lg-block" id="collapseNav">
+        <nav class="py-4">
+            
+
+<ul class="list-group list-group-flush rounded">
+        <li class="list-group-item">
+            <a class="nav-link" href="/">
+                ホーム
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a aria-current="true" class="ancestor nav-link" href="/archives/">
+                アーカイブ
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a class="nav-link" href="/contact.html">
+                お問い合わせ
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a class="nav-link" href="/about.html">
+                もっと知る
+            </a>
+        </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+
+        </header>
+        <main class="g222-main py-5">
+            
+    <div style="max-width: 796px;">
+        <div class="d-flex flex-column align-items-center pb-5">
+            <h1>PHP でダイクストラ法をつくる</h1>
+
+            <div class="d-flex flex-wrap align-items-center py-4" style="gap: .5rem 2rem">
+                <div>
+                    <span>作成日：</span>
+                    
+
+
+
+
+
+<time datetime="2026-03-01T12:41:33&#43;09:00">2026年3月1日（日）</time>
+
+                </div>
+                
+            </div>
+
+            
+                <div class="position-relative" style="max-width:500px; margin-inline:auto;">
+                    <img src="https://img.thirdcake.com/img/7ec9ab8ec17d9e6a301fada0f9fcba33/6dtynj2cja4ixfm.webp" alt="東京都浅草にある伝法院とスカイツリー" class="img-fluid" />
+                    
+                    <button type="button" class="btn btn-secondary position-absolute bottom-0 start-0 m-2"
+                        data-bs-toggle="collapse" data-bs-target="#collapseEyecatch" 
+                        aria-expanded="false" aria-controls="collapseEyecatch">ALT</button>
+                    
+                </div>
+                
+                <div class="collapse" id="collapseEyecatch" style="width:100%;max-width:500px; margin-inline:auto;">
+                    <div class="alert alert-secondary mt-2">東京都浅草にある伝法院とスカイツリー</div>
+                </div>
+                
+            
+        </div>
+    </div>
+    <div style="max-width: 796px;"><nav aria-label="breadcrumb"  style="--bs-breadcrumb-divider: '&gt;' " >
+    <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="https://g222.thirdcake.com/">ホーム</a>
+    </li>
+    <li class="breadcrumb-item">
+        <a href="https://g222.thirdcake.com/archives/">記事一覧</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">
+        PHP でダイクストラ法をつくる
+    </li>
+    </ol>
+</nav>
+</div>
+
+    <div class="row">
+        
+        <div class="col-12 col-xxl-3 order-xxl-5 py-5 ps-3">
+            <div class="sticky-xxl-top">
+                <h2 class="h5 pt-4">目次：</h2>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#dijkstra-法とは">Dijkstra 法とは</a></li>
+    <li><a href="#実装したものがこちら">実装したものがこちら</a></li>
+    <li><a href="#ダイクストラ法の利用上の注意点">ダイクストラ法の利用上の注意点</a></li>
+    <li><a href="#計算量と実用度">計算量と実用度</a></li>
+  </ul>
+</nav>
+            </div>
+        </div>
+        
+        <div class="col-12 col-xxl-9 order-xxl-1 p-4 rounded g222-markdown-content" 
+            style="color:var(--bs-body-color);background-color:var(--bs-body-bg);">
+            <p>ここ2年ほど、 AtCoder という競技プログラミングを楽しんでいます。<br>
+おもに PHP を使っているのですが、インターネット上に、なかなかちょうどよい記事を見つけられないため、過去の自分が悩んだところを、まとめて置きたいと思います。</p>
+<p>以前、 <a href="/archives/325.html">Union Find について紹介したことがあります</a> が、今回は、 Dijkstra 法についてまとめます。</p>
+<h2 id="dijkstra-法とは">Dijkstra 法とは</h2>
+<p>Dijkstra と書かれても、そもそも読み方が難しいです。<br>
+エドガー・ダイクストラ（ Dijkstra ）さんという、オランダのコンピュータ科学者が発見したアルゴリズムが、ダイクストラ法（だいくすとらほう、 Dijkstra&rsquo;s algorithm）です。</p>
+<p>辺でつながったグラフ上のある点から、他の到達可能なすべての点までの、最短距離を効率よく求められます。</p>
+<p>実用上のことはあまり詳しくないのですが、たとえば、 Yahoo 路線情報のような路線検索において、出発駅から到着駅までの経路がいくつかあるときに、乗車時間の最短時間や、運賃の最安値を計算をしたい場合に使えそうです。</p>
+<p>今回は、これを PHP で実装してみます。</p>
+<h2 id="実装したものがこちら">実装したものがこちら</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">dijkstra</span>(<span style="color:#66d9ef">array</span> $graph, <span style="color:#a6e22e">int</span> $n, <span style="color:#a6e22e">int</span> $start) {
+</span></span><span style="display:flex;"><span>        $dist <span style="color:#f92672">=</span> <span style="color:#a6e22e">array_fill</span>(<span style="color:#ae81ff">0</span>, $n, <span style="color:#a6e22e">PHP_INT_MAX</span>);
+</span></span><span style="display:flex;"><span>        $dist[$start] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>        $que <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">SplPriorityQueue</span>();
+</span></span><span style="display:flex;"><span>        $que<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">insert</span>([<span style="color:#ae81ff">0</span>, $start], <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span>(<span style="color:#f92672">!</span>$que<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">isEmpty</span>()) {
+</span></span><span style="display:flex;"><span>                [$d, $v] <span style="color:#f92672">=</span> $que<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">extract</span>();
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span>($d <span style="color:#f92672">&gt;</span> $dist[$v]) {
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">continue</span>;
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">foreach</span>($graph[$v] <span style="color:#66d9ef">as</span> $u <span style="color:#f92672">=&gt;</span> $weight) {
+</span></span><span style="display:flex;"><span>                        $newd <span style="color:#f92672">=</span> $d <span style="color:#f92672">+</span> $weight;
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">if</span>($dist[$u] <span style="color:#f92672">&gt;</span> $newd) {
+</span></span><span style="display:flex;"><span>                                $dist[$u] <span style="color:#f92672">=</span> $newd;
+</span></span><span style="display:flex;"><span>                                $que<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">insert</span>([$newd, $u], <span style="color:#f92672">-</span>$newd);
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> $dist;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 使い方：
+</span></span></span><span style="display:flex;"><span>$g <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>$g[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>$g[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>$g[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>;
+</span></span><span style="display:flex;"><span>$g[<span style="color:#ae81ff">2</span>][<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>;
+</span></span><span style="display:flex;"><span>$g[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>$g[<span style="color:#ae81ff">2</span>][<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>$dist <span style="color:#f92672">=</span> <span style="color:#a6e22e">dijkstra</span>($g, <span style="color:#a6e22e">count</span>($g), <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// 0からの距離
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">implode</span>(<span style="color:#e6db74">&#39; &#39;</span>, $dist)<span style="color:#f92672">.</span><span style="color:#a6e22e">PHP_EOL</span>;
+</span></span></code></pre></div><p>簡単に解説します。</p>
+<p>元となるデータ構造は、優先度付きキューです。<br>
+（優先度付きキューについては、 <a href="https://qiita.com/g222/items/dd95b4abaae393c7ef53">以前 Qiita に記事を書いたことがある</a> ので、興味のある方は読んでみてください）</p>
+<p>スタートとなる点から、辺でつながった各点までの重みを、優先度付きキューで管理して、軽い順に並べます。<br>
+新しい到達点が見つかるたびに、軽い順で並び直されるため、常にその時点で最も軽い辺を選び続けることができます。</p>
+<p>そして、過去に到達した重みよりも、軽い到達方法が見つかれば、順次更新されていきます。</p>
+<p>過去に探索した、それよりもより重い重みによる到達方法も、キューには装填済みですが、優先度付きキューにより後回しにされるため、結果的に無駄な計算が無視されるというわけです。</p>
+<p>その時点で候補となる到達点について、重みの小さい順に並び替え続けるため、常に最短の経路を検討し続けることが可能となります。</p>
+<h2 id="ダイクストラ法の利用上の注意点">ダイクストラ法の利用上の注意点</h2>
+<p>上記解説の通り、ダイクストラ法は、過去に到達した重さよりも軽い点が見つかれば、それを上書きするようになっています。<br>
+このことは逆に言えば、もし辺の重みにマイナスがあると、過去に確定した点の到達を上書きしてしまい、再計算が必要になるということです。<br>
+これにより、無駄な再計算がたくさん出てくる事態になりえますし、最悪の場合、サイクルのたびにどんどん軽くなっていって、無限ループになるおそれもあります。</p>
+<p>よく、ダイクストラ法は辺の重みがすべて非負（0以上）でなければならないと言われるのは、このような理由によるものです。</p>
+<h2 id="計算量と実用度">計算量と実用度</h2>
+<p>頂点数を V, 辺の数を E とするとき、およその計算量は O(ElogV) です。<br>
+（logV の部分は、優先度付きキューの並び替え時間です。実際は、 class の呼び出しなどのオーバーヘッドがあるため、理論通りの時間計算量ではないです）</p>
+<p>およそ 10の5乗（10万）くらいの頂点を持つグラフであれば、1000ミリ秒程度で計算が終わることが多いです。<br>
+これは、イメージ的には、 10万個の駅がある路線図に対して、ある駅から他のすべての駅までの到達時間を調べるのに、1秒程度でできてしまうことを意味します。</p>
+<p>十分高速ですし、実用的なアルゴリズムと言えそうです。</p>
+
+        </div>
+    </div>
+    
+
+    <div style="max-width: 796px;">
+        <div class="p-3">
+            <p>最後までお読みいただき、ありがとうございました。</p>
+            <p>何かお気づきの点がありましたら、 <a href="/contact.html">お問い合わせ</a> ください。</p>
+        </div>
+    </div>
+    
+    <yukimasa-content></yukimasa-content>
+
+        </main>
+        <footer class="g222-footer">
+            <div class="row py-5 my-5 border-top">
+    <div class="col col-12 col-md-4 mb-3">
+        <a href="/">
+            <img src="/favicon.svg" class="mb-3 rounded"
+                style="width:32px;height:auto;"/>
+        </a>
+        <p class="text-body-secondary">
+            Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a><br>
+            &copy; 2026
+        </p>
+    </div>
+    <div class="col col-12 col-sm-6 col-md-3 mb-3">
+        <h3 class="h5">SNS 等</h3>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+                <a href="https://thirdcake.github.io/tools_page/" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/github-mark.svg" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">GitHub</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://atcoder.jp/users/g222" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/atcoder-icon.webp" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">AtCoder</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://qiita.com/g222" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/qiita-icon.webp" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">Qiita</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://www.thirdcake.com/tweets" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/favicon.svg" width="18" height="18" alt="" style="width:1.3em;height:auto;border-radius:var(--bs-border-radius);"/>
+                        <span class="mx-2">つぶやきサイト</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://x.com/g222tech" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/twitter-logo.svg" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">X(Twitter)</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col col-12 col-sm-6 col-md-5 mb-3">
+        <h3 class="h5">つつじ行政書士事務所</h3>
+        <address>〒830-0044<br>
+            福岡県久留米市本町233-2-502</address>
+        <p>ITストラテジストの行政書士です。<br>
+            ご相談等は、<a href="/contact.html">お問い合わせ</a>からお願いします。</p>
+        <p><a href="/privacy.html">プライバシーポリシー</a></p>
+    </div>
+</div>
+
+        </footer>
+    </div>
+</body>
+</html>

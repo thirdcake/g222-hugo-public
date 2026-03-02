@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://g222.thirdcake.com/archives/343.html</loc>
-    <lastmod>2026-02-26T12:11:57+09:00</lastmod>
+    <loc>https://g222.thirdcake.com/archives/344.html</loc>
+    <lastmod>2026-03-01T12:41:33+09:00</lastmod>
   </url><url>
     <loc>https://g222.thirdcake.com/archives/</loc>
-    <lastmod>2026-02-26T12:11:57+09:00</lastmod>
+    <lastmod>2026-03-01T12:41:33+09:00</lastmod>
   </url><url>
-    <loc>https://g222.thirdcake.com/contact.html</loc>
-    <lastmod>2026-02-25T14:53:26+09:00</lastmod>
+    <loc>https://g222.thirdcake.com/archives/343.html</loc>
+    <lastmod>2026-02-26T12:11:57+09:00</lastmod>
   </url><url>
     <loc>https://g222.thirdcake.com/privacy.html</loc>
     <lastmod>2026-02-25T14:53:26+09:00</lastmod>
@@ -130,9 +130,5 @@
   </url><url>
     <loc>https://g222.thirdcake.com/archives/1.html</loc>
     <lastmod>2023-07-16T11:31:08+09:00</lastmod>
-  </url><url>
-    <loc>https://g222.thirdcake.com/categories/</loc>
-  </url><url>
-    <loc>https://g222.thirdcake.com/tags/</loc>
   </url>
 </urlset>
