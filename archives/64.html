@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress で画像管理 | つつじ行政書士事務所</title><link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+<script defer src="/js/bootstrap.min.js"></script>
+        <script src="/js/main.js"></script>
+
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+    <div class="container g222-container">
+        <header class="g222-header">
+            <div class="py-5">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column justify-content-start align-items-start">
+            <a href="/" class="">
+                <img src="/favicon.svg" width="1" height="1"
+                    style="width:80px;height:auto;"
+                    class="rounded" alt="">
+            </a>
+            <div class="d-flex flex-nowrap justify-content-start align-items-end">
+                <h1 class="g222-site-title">つつじ行政書士事務所</h1>
+                <color-mode></color-mode>
+            </div>
+        </div>
+        <div class="d-lg-none">
+            <button type="button" class="btn btn-outline-secondary"
+                data-bs-toggle="collapse" data-bs-target="#collapseNav"
+                aria-expanded="false" aria-label="Toggle navigation"
+                aria-controls="collapseNav">
+                <svg viewBox="0 0 16 16" style="width:1.5em;height:auto;">
+                    <use href="/img/icon.svg#menu"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="collapse d-lg-block" id="collapseNav">
+        <nav class="py-4">
+            
+
+<ul class="list-group list-group-flush rounded">
+        <li class="list-group-item">
+            <a class="nav-link" href="/">
+                ホーム
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a aria-current="true" class="ancestor nav-link" href="/archives/">
+                アーカイブ
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a class="nav-link" href="/contact.html">
+                お問い合わせ
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a class="nav-link" href="/about.html">
+                もっと知る
+            </a>
+        </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+
+        </header>
+        <main class="g222-main py-5">
+            
+    <div style="max-width: 796px;">
+        <div class="d-flex flex-column align-items-center pb-5">
+            <h1>WordPress で画像管理</h1>
+
+            <div class="d-flex flex-wrap align-items-center py-4" style="gap: .5rem 2rem">
+                <div>
+                    <span>作成日：</span>
+                    
+
+
+
+
+
+<time datetime="2023-04-29T09:33:03&#43;09:00">2023年4月29日（土）</time>
+
+                </div>
+                
+                    <div>
+                        <span>更新日：</span>
+                        
+
+
+
+
+
+<time datetime="2023-05-25T13:26:07&#43;09:00">2023年5月25日（木）</time>
+
+                    </div>
+                
+            </div>
+
+            
+                <div class="position-relative" style="max-width:500px; margin-inline:auto;">
+                    <img src="https://img.thirdcake.com/img/c1cb814fcaa373ca145f356dab2ad243/rk3vrl6cjhmdpbt.jpg" alt="島根県の温泉津温泉にある薬師湯の外観" class="img-fluid" />
+                    
+                    <button type="button" class="btn btn-secondary position-absolute bottom-0 start-0 m-2"
+                        data-bs-toggle="collapse" data-bs-target="#collapseEyecatch" 
+                        aria-expanded="false" aria-controls="collapseEyecatch">ALT</button>
+                    
+                </div>
+                
+                <div class="collapse" id="collapseEyecatch" style="width:100%;max-width:500px; margin-inline:auto;">
+                    <div class="alert alert-secondary mt-2">島根県の温泉津温泉にある薬師湯の外観</div>
+                </div>
+                
+            
+        </div>
+    </div>
+    <div style="max-width: 796px;"><nav aria-label="breadcrumb"  style="--bs-breadcrumb-divider: '&gt;' " >
+    <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="http://localhost:1313/">ホーム</a>
+    </li>
+    <li class="breadcrumb-item">
+        <a href="http://localhost:1313/archives/">記事一覧</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">
+        WordPress で画像管理
+    </li>
+    </ol>
+</nav>
+</div>
+
+    <div class="row">
+        
+        <div class="col-12 col-xxl-3 order-xxl-5 py-5 ps-3">
+            <div class="sticky-xxl-top">
+                <h2 class="h5 pt-4">目次：</h2>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#やりたいこと">やりたいこと</a></li>
+    <li><a href="#方法1-wp-adminoptionsphp">方法1 wp-admin/options.php</a></li>
+    <li><a href="#方法2-wp-adminoptionsphp--htaccess">方法2 wp-admin/options.php &amp; .htaccess</a></li>
+    <li><a href="#方法3-wp-original-media-pathプラグイン">方法3 WP Original Media Pathプラグイン</a></li>
+    <li><a href="#まとめ">まとめ</a></li>
+  </ul>
+</nav>
+            </div>
+        </div>
+        
+        <div class="col-12 col-xxl-9 order-xxl-1 p-4 rounded g222-markdown-content" 
+            style="color:var(--bs-body-color);background-color:var(--bs-body-bg);">
+            <p>当サイトでは、WordPressをヘッドレスで使っています。<br>
+今回は、ヘッドレスWordPressで問題になりがちな、画像管理の方法をまとめます。</p>
+<p>ヘッドレス利用でなくても、単に画像管理したい場合にも使える方法だと思います。</p>
+<p>なお、当サイトはプラグインを使わない方法を採用していますが、プラグインを使った場合についても、最後に少しだけ説明しています。</p>
+<h2 id="やりたいこと">やりたいこと</h2>
+<p>WordPressに画像をアップロードするとき、初期設定では、 <code>https\://domain.com/サブディレクトリ/wp-content/uploads/年/月/ファイル名.webp</code> というような画像URLになると思います。</p>
+<p>しかし、これではWordPressの保存場所が分かってしまって、ヘッドレス化の恩恵が少なくなります。<br>
+そこで、このURLを、 <code>https\://domain.com/img/年/月/ファイル名.webp</code> にする方法を探しました。</p>
+<h2 id="方法1-wp-adminoptionsphp">方法1 wp-admin/options.php</h2>
+<p>2023年4月現在、検索した範囲では、この方法がもっとも利用されていると思います。</p>
+<p><code>wp-admin</code> 画面で、<code>options.php</code> をURLに追記すると、オプション画面が表示されます。<br>
+このオプションで、 <code>upload_path</code> と、 <code>upload_url_path</code> のところを編集すれば、アップロード先を変更できます。</p>
+<p>ただし、当サイトの環境だと、新しく「年/月フォルダー」を作成するときに、エラーが出ました。<br>
+わたしが利用しているレンタルサーバーのセキュリティ設定が、WordPressと相性が良くないのかもしれません。</p>
+<p>その場合、WordPressの左側のメニューから、「設定」の「メディア」を選択し、「アップロードしたファイルを年月ベースのフォルダーに整理」のチェックを外すと、うまくいくようです。</p>
+<p>とはいえ、わたしは「年/月フォルダー」を利用したかったので、別の方法を模索しました。</p>
+<h2 id="方法2-wp-adminoptionsphp--htaccess">方法2 wp-admin/options.php &amp; .htaccess</h2>
+<p>そこで、 <code>upload_path</code> は空欄にして、 <code>upload_url_path</code> の方のみ、変更することを考えます。</p>
+<p>このとき、画像自体はあいかわらず「/サブディレクトリ/wp-content/uploads/年/月/フォルダー」に入ったままなので、URLでアクセスしたときに、リライトされるような設定が必要になります。</p>
+<p>当サイトで利用しているレンタルサーバーはアパッチサーバーで、<code>.htaccess</code> が使えますから、 <code>rewriteengine</code> を利用します。</p>
+<p>たとえば、 以下のような1行を記述すれば、uploads フォルダに自動的に移動してくれるはずです。</p>
+<pre tabindex="0"><code>RewriteRule img/(.*) サブディレクトリ/wp-content/uploads/$1 [QSA]
+</code></pre><p>当サイトは、この方法により「/img/年/月フォルダー」を利用することができました。</p>
+<h2 id="方法3-wp-original-media-pathプラグイン">方法3 WP Original Media Pathプラグイン</h2>
+<p>サイトでは、上記の方法でうまくいきましたので、プラグインを使う必要がありませんでしたが、レンタルサーバーの相性次第では、プラグインを利用する方法も選択肢にあがります。</p>
+<p>わたしが検索した範囲では、「WP Original Media Path」というプラグインが、もっとも利用しやすそうでした。</p>
+<p>2023年4月時点で、メンテナンスがきちんと行われていることも確認できました。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>WordPressをヘッドレス化する場合の、画像問題について紹介しました。</p>
+<p>Jamstackなどを使って、画像をまるごとコピーするような力技もあるとは思います。<br>
+ですが、node.jsなどが動かない、普通のレンタルサーバーで作るなら、上記のような方法が簡単で良いのではないかと（今のところは）考えています。</p>
+<p>ただし、この方法は、WordPressの仕様が変われば、変更しなければならないものです。<br>
+多少のリスクがある方法だということは、ご理解いただければと思います。</p>
+
+        </div>
+    </div>
+    
+
+    <div style="max-width: 796px;">
+        <div class="p-3">
+            <p>最後までお読みいただき、ありがとうございました。</p>
+            <p>何かお気づきの点がありましたら、 <a href="/contact.html">お問い合わせ</a> ください。</p>
+        </div>
+    </div>
+    
+    <yukimasa-content></yukimasa-content>
+
+        </main>
+        <footer class="g222-footer">
+            <div class="row py-5 my-5 border-top">
+    <div class="col col-12 col-md-4 mb-3">
+        <a href="/">
+            <img src="/favicon.svg" class="mb-3 rounded"
+                style="width:32px;height:auto;"/>
+        </a>
+        <p class="text-body-secondary">
+            Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a><br>
+            &copy; 2026
+        </p>
+    </div>
+    <div class="col col-12 col-sm-6 col-md-3 mb-3">
+        <h3 class="h5">SNS 等</h3>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+                <a href="https://thirdcake.github.io/tools_page/" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/github-mark.svg" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">GitHub</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://atcoder.jp/users/g222" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/atcoder-icon.webp" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">AtCoder</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://qiita.com/g222" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/qiita-icon.webp" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">Qiita</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://www.thirdcake.com/tweets" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/favicon.svg" width="18" height="18" alt="" style="width:1.3em;height:auto;border-radius:var(--bs-border-radius);"/>
+                        <span class="mx-2">つぶやきサイト</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://x.com/g222tech" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/twitter-logo.svg" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">X(Twitter)</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col col-12 col-sm-6 col-md-5 mb-3">
+        <h3 class="h5">つつじ行政書士事務所</h3>
+        <address>〒830-0044<br>
+            福岡県久留米市本町233-2-502</address>
+        <p>ITストラテジストの行政書士です。<br>
+            ご相談等は、<a href="/contact.html">お問い合わせ</a>からお願いします。</p>
+        <p><a href="/privacy.html">プライバシーポリシー</a></p>
+    </div>
+</div>
+
+        </footer>
+    </div>
+</body>
+</html>

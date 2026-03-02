@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConoHa WINGでSSHからログを読みたい | つつじ行政書士事務所</title><link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+<script defer src="/js/bootstrap.min.js"></script>
+        <script src="/js/main.js"></script>
+
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+    <div class="container g222-container">
+        <header class="g222-header">
+            <div class="py-5">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column justify-content-start align-items-start">
+            <a href="/" class="">
+                <img src="/favicon.svg" width="1" height="1"
+                    style="width:80px;height:auto;"
+                    class="rounded" alt="">
+            </a>
+            <div class="d-flex flex-nowrap justify-content-start align-items-end">
+                <h1 class="g222-site-title">つつじ行政書士事務所</h1>
+                <color-mode></color-mode>
+            </div>
+        </div>
+        <div class="d-lg-none">
+            <button type="button" class="btn btn-outline-secondary"
+                data-bs-toggle="collapse" data-bs-target="#collapseNav"
+                aria-expanded="false" aria-label="Toggle navigation"
+                aria-controls="collapseNav">
+                <svg viewBox="0 0 16 16" style="width:1.5em;height:auto;">
+                    <use href="/img/icon.svg#menu"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="collapse d-lg-block" id="collapseNav">
+        <nav class="py-4">
+            
+
+<ul class="list-group list-group-flush rounded">
+        <li class="list-group-item">
+            <a class="nav-link" href="/">
+                ホーム
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a aria-current="true" class="ancestor nav-link" href="/archives/">
+                アーカイブ
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a class="nav-link" href="/contact.html">
+                お問い合わせ
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a class="nav-link" href="/about.html">
+                もっと知る
+            </a>
+        </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+
+        </header>
+        <main class="g222-main py-5">
+            
+    <div style="max-width: 796px;">
+        <div class="d-flex flex-column align-items-center pb-5">
+            <h1>ConoHa WINGでSSHからログを読みたい</h1>
+
+            <div class="d-flex flex-wrap align-items-center py-4" style="gap: .5rem 2rem">
+                <div>
+                    <span>作成日：</span>
+                    
+
+
+
+
+
+<time datetime="2023-11-19T12:42:17&#43;09:00">2023年11月19日（日）</time>
+
+                </div>
+                
+                    <div>
+                        <span>更新日：</span>
+                        
+
+
+
+
+
+<time datetime="2024-05-25T22:56:19&#43;09:00">2024年5月25日（土）</time>
+
+                    </div>
+                
+            </div>
+
+            
+                <div class="position-relative" style="max-width:500px; margin-inline:auto;">
+                    <img src="https://img.thirdcake.com/img/dd8887c14c1211dbef4913651ba6865d/yzhu0xc8unrqzfg.webp" alt="富山市の市街地から見る立山連峰" class="img-fluid" />
+                    
+                    <button type="button" class="btn btn-secondary position-absolute bottom-0 start-0 m-2"
+                        data-bs-toggle="collapse" data-bs-target="#collapseEyecatch" 
+                        aria-expanded="false" aria-controls="collapseEyecatch">ALT</button>
+                    
+                </div>
+                
+                <div class="collapse" id="collapseEyecatch" style="width:100%;max-width:500px; margin-inline:auto;">
+                    <div class="alert alert-secondary mt-2">富山市の市街地から見る立山連峰</div>
+                </div>
+                
+            
+        </div>
+    </div>
+    <div style="max-width: 796px;"><nav aria-label="breadcrumb"  style="--bs-breadcrumb-divider: '&gt;' " >
+    <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="http://localhost:1313/">ホーム</a>
+    </li>
+    <li class="breadcrumb-item">
+        <a href="http://localhost:1313/archives/">記事一覧</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">
+        ConoHa WINGでSSHからログを読みたい
+    </li>
+    </ol>
+</nav>
+</div>
+
+    <div class="row">
+        
+        <div class="col-12 col-xxl-3 order-xxl-5 py-5 ps-3">
+            <div class="sticky-xxl-top">
+                <h2 class="h5 pt-4">目次：</h2>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1コントロールパネルから秘密鍵を作成する">1.コントロールパネルから秘密鍵を作成する</a></li>
+    <li><a href="#2sshconfigファイルを作成する">2.~/.ssh/configファイルを作成する</a></li>
+    <li><a href="#3ターミナルからssh接続する">3.ターミナルからSSH接続する</a></li>
+    <li><a href="#4linuxコマンドでログを読む">4.linuxコマンドでログを読む</a></li>
+    <li><a href="#まとめ">まとめ</a></li>
+  </ul>
+</nav>
+            </div>
+        </div>
+        
+        <div class="col-12 col-xxl-9 order-xxl-1 p-4 rounded g222-markdown-content" 
+            style="color:var(--bs-body-color);background-color:var(--bs-body-bg);">
+            <p>webサイトのセキュリティを考えるうえで、ログを定期的に読んでおくことは大事なことです。</p>
+<p>以前にも一度紹介したことがありますが、当サイトのようなアクセス数のそれほど多くないサイトでも、定期的に不審なアクセスが観測されています。<br>
+（とくに、WordPressのような動的サイトならなおさらです）</p>
+<p>今回は、ConoHa WINGというレンタルサーバーで、SSH接続でログを確認する手順をまとめました。</p>
+<h2 id="1コントロールパネルから秘密鍵を作成する">1.コントロールパネルから秘密鍵を作成する</h2>
+<p>SSH接続をする場合、パスワードで認証する方法もあるようですが、一般的には秘密鍵を生成します。<br>
+今回接続するレンタルサーバーのConoHa WINGは、コントロールパネルから秘密鍵を生成できます。</p>
+<p>詳しくは、<a href="https://support.conoha.jp/w/sshaccount/">ConoHaのヘルプ記事</a>をご覧ください。</p>
+<p>なお、秘密鍵（プライベートキー）は、絶対に流出させてはいけないものです。<br>
+また、誤って消してしまわないように、大切に保管できるディレクトリに移してください。</p>
+<h2 id="2sshconfigファイルを作成する">2.~/.ssh/configファイルを作成する</h2>
+<p>次に、<code>~/.ssh/</code> フォルダに、configファイルを作成します。</p>
+<p>configファイルについても、作り方がネットにはたくさん載っているのですが、たとえば以下のような記事が参考になるかもしれません。</p>
+<p><a href="https://qiita.com/passol78/items/2ad123e39efeb1a5286b">~/.ssh/configについて</a></p>
+<p>ConoHaで作る場合は、次のようなものになると思います。</p>
+<pre tabindex="0"><code>Host 【覚えやすい名前】
+  HostName 【ConoHaのホスト名】
+  User 【ConoHaのユーザー名】
+  IdentityFile 【秘密鍵のディレクトリとファイル名】
+  Port 【ポート番号】
+</code></pre><p>ホスト名やユーザー名、ポート番号などは、コントロールパネルに書いてあります。</p>
+<h2 id="3ターミナルからssh接続する">3.ターミナルからSSH接続する</h2>
+<p>SSH接続のできるターミナルから、接続します。</p>
+<p>わたしの事務所PCはWindowsなので、Windowsターミナルを使っています。<br>
+（以前、PowerShellを使っていたこともあるのですが、文字色が読みにくく、やめました）</p>
+<p>ターミナルを立ち上げると、コマンドが打てるようになるので、以下を入力してエンターを押します。</p>
+<pre tabindex="0"><code>ssh 【先ほど決めた覚えやすい名前】
+</code></pre><p>ssh接続をするとき、最初の1回は「本当に接続して大丈夫？」というようなことが聞かれるので、yesを押します。</p>
+<p>無事、ConoHaアカウントに接続できれば成功です。</p>
+<h2 id="4linuxコマンドでログを読む">4.linuxコマンドでログを読む</h2>
+<p>ConoHa WINGの場合（もしかしたらほかのサーバーも同様なのかもしれませんが）、 <code>~/logs/【独自ドメイン】/accesslog.【日付】.gz</code> というファイルに、過去数日分のアクセスログが格納されています。</p>
+<p>（※ エラーログやPHPのログも、その周囲にありますので、lsコマンドなどで探してください。）</p>
+<p>gzファイルで、圧縮されているので、このままでは読みにくいです。<br>
+以下のような zcat コマンドで、展開してから使うと良いようです。</p>
+<pre tabindex="0"><code>$ zcat ./logs/【独自ドメイン】/accesslog.【日付】.gz
+</code></pre><p>わたしの場合は、<code>grep &quot;404&quot;</code> などで絞り込んでから、<code>wc -l</code> や、<code>less</code> コマンドで行数や一覧を表示させることが多いです。</p>
+<p>具体例：</p>
+<pre tabindex="0"><code>$ zcat ./logs/【独自ドメイン】/accesslog.【日付】.gz | grep &#34;404&#34; | wc -l
+$ zcat ./logs/【独自ドメイン】/accesslog.【日付】.gz | grep &#34;404&#34; | less
+</code></pre><p>定期的に知っておきたい情報は、cronで自動化して、抽出した情報を蓄積し、グラフにするようなこともできるかもしれません。（わたしはそこまではやっていません。）</p>
+<h2 id="まとめ">まとめ</h2>
+<p>今回ご紹介した内容は、簡単なコマンドだけで利用できるので、おすすめです。</p>
+<p>「PCを立ち上げるのすら面倒」という方には、あまりおすすめできない方法かもしれませんが、毎日PCを使う方であれば、最初に秘密鍵とconfigファイルさえ作ってしまえば、次の日からの作業は、コマンドを打つだけで済みます。</p>
+<p>もちろん、コマンドを用いずに、ログを自動的に分析してくれるツールもあるとは思います。<br>
+けれども、だいたいの場合、お金もかかりますし、生のログ情報ではないので、見るときの切り口がある程度限られます。</p>
+<p>今回ご紹介した方法なら、いくつかのコマンドを覚えておけば、あとは自分の好みによって、いろいろと変えられるので自由度が高いです。</p>
+<p>お時間のある方は、お試しください。</p>
+
+        </div>
+    </div>
+    
+
+    <div style="max-width: 796px;">
+        <div class="p-3">
+            <p>最後までお読みいただき、ありがとうございました。</p>
+            <p>何かお気づきの点がありましたら、 <a href="/contact.html">お問い合わせ</a> ください。</p>
+        </div>
+    </div>
+    
+    <yukimasa-content></yukimasa-content>
+
+        </main>
+        <footer class="g222-footer">
+            <div class="row py-5 my-5 border-top">
+    <div class="col col-12 col-md-4 mb-3">
+        <a href="/">
+            <img src="/favicon.svg" class="mb-3 rounded"
+                style="width:32px;height:auto;"/>
+        </a>
+        <p class="text-body-secondary">
+            Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a><br>
+            &copy; 2026
+        </p>
+    </div>
+    <div class="col col-12 col-sm-6 col-md-3 mb-3">
+        <h3 class="h5">SNS 等</h3>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+                <a href="https://thirdcake.github.io/tools_page/" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/github-mark.svg" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">GitHub</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://atcoder.jp/users/g222" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/atcoder-icon.webp" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">AtCoder</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://qiita.com/g222" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/qiita-icon.webp" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">Qiita</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://www.thirdcake.com/tweets" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/favicon.svg" width="18" height="18" alt="" style="width:1.3em;height:auto;border-radius:var(--bs-border-radius);"/>
+                        <span class="mx-2">つぶやきサイト</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://x.com/g222tech" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/twitter-logo.svg" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">X(Twitter)</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col col-12 col-sm-6 col-md-5 mb-3">
+        <h3 class="h5">つつじ行政書士事務所</h3>
+        <address>〒830-0044<br>
+            福岡県久留米市本町233-2-502</address>
+        <p>ITストラテジストの行政書士です。<br>
+            ご相談等は、<a href="/contact.html">お問い合わせ</a>からお願いします。</p>
+        <p><a href="/privacy.html">プライバシーポリシー</a></p>
+    </div>
+</div>
+
+        </footer>
+    </div>
+</body>
+</html>

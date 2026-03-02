@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPressのセキュリティで最低限やってほしい4つのこと | つつじ行政書士事務所</title><link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+<script defer src="/js/bootstrap.min.js"></script>
+        <script src="/js/main.js"></script>
+
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+    <div class="container g222-container">
+        <header class="g222-header">
+            <div class="py-5">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column justify-content-start align-items-start">
+            <a href="/" class="">
+                <img src="/favicon.svg" width="1" height="1"
+                    style="width:80px;height:auto;"
+                    class="rounded" alt="">
+            </a>
+            <div class="d-flex flex-nowrap justify-content-start align-items-end">
+                <h1 class="g222-site-title">つつじ行政書士事務所</h1>
+                <color-mode></color-mode>
+            </div>
+        </div>
+        <div class="d-lg-none">
+            <button type="button" class="btn btn-outline-secondary"
+                data-bs-toggle="collapse" data-bs-target="#collapseNav"
+                aria-expanded="false" aria-label="Toggle navigation"
+                aria-controls="collapseNav">
+                <svg viewBox="0 0 16 16" style="width:1.5em;height:auto;">
+                    <use href="/img/icon.svg#menu"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="collapse d-lg-block" id="collapseNav">
+        <nav class="py-4">
+            
+
+<ul class="list-group list-group-flush rounded">
+        <li class="list-group-item">
+            <a class="nav-link" href="/">
+                ホーム
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a aria-current="true" class="ancestor nav-link" href="/archives/">
+                アーカイブ
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a class="nav-link" href="/contact.html">
+                お問い合わせ
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a class="nav-link" href="/about.html">
+                もっと知る
+            </a>
+        </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+
+        </header>
+        <main class="g222-main py-5">
+            
+    <div style="max-width: 796px;">
+        <div class="d-flex flex-column align-items-center pb-5">
+            <h1>WordPressのセキュリティで最低限やってほしい4つのこと</h1>
+
+            <div class="d-flex flex-wrap align-items-center py-4" style="gap: .5rem 2rem">
+                <div>
+                    <span>作成日：</span>
+                    
+
+
+
+
+
+<time datetime="2023-08-13T08:55:00&#43;09:00">2023年8月13日（日）</time>
+
+                </div>
+                
+                    <div>
+                        <span>更新日：</span>
+                        
+
+
+
+
+
+<time datetime="2025-03-24T11:02:25&#43;09:00">2025年3月24日（月）</time>
+
+                    </div>
+                
+            </div>
+
+            
+                <div class="position-relative" style="max-width:500px; margin-inline:auto;">
+                    <img src="https://img.thirdcake.com/img/880fcbe580513470ae4e1db2ef4d9e8a/enlccy73ir8d21j.webp" alt="岐阜県のぎふメディアコスモス外観" class="img-fluid" />
+                    
+                    <button type="button" class="btn btn-secondary position-absolute bottom-0 start-0 m-2"
+                        data-bs-toggle="collapse" data-bs-target="#collapseEyecatch" 
+                        aria-expanded="false" aria-controls="collapseEyecatch">ALT</button>
+                    
+                </div>
+                
+                <div class="collapse" id="collapseEyecatch" style="width:100%;max-width:500px; margin-inline:auto;">
+                    <div class="alert alert-secondary mt-2">岐阜県のぎふメディアコスモス外観</div>
+                </div>
+                
+            
+        </div>
+    </div>
+    <div style="max-width: 796px;"><nav aria-label="breadcrumb"  style="--bs-breadcrumb-divider: '&gt;' " >
+    <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="http://localhost:1313/">ホーム</a>
+    </li>
+    <li class="breadcrumb-item">
+        <a href="http://localhost:1313/archives/">記事一覧</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">
+        WordPressのセキュリティで最低限やってほしい4つのこと
+    </li>
+    </ol>
+</nav>
+</div>
+
+    <div class="row">
+        
+        <div class="col-12 col-xxl-3 order-xxl-5 py-5 ps-3">
+            <div class="sticky-xxl-top">
+                <h2 class="h5 pt-4">目次：</h2>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1まず何よりもパスワード">1.まず、何よりもパスワード</a></li>
+    <li><a href="#2バージョンを最新にする">2.バージョンを最新にする</a></li>
+    <li><a href="#3xml-rpcを無効化する">3.XML-RPCを無効化する</a>
+      <ul>
+        <li><a href="#xml-rpcとは">XML-RPCとは？</a></li>
+        <li><a href="#無効化する際の注意点">無効化する際の注意点</a></li>
+      </ul>
+    </li>
+    <li><a href="#4ログインを制限する">4.ログインを制限する</a>
+      <ul>
+        <li><a href="#4-1-ログイン画面へのアクセス制限">4-1. ログイン画面へのアクセス制限</a></li>
+        <li><a href="#4-2-パスワードを一定回数間違えたらロック">4-2. パスワードを一定回数間違えたらロック</a></li>
+        <li><a href="#4-3-2要素認証の設定">4-3. 2要素認証の設定</a></li>
+      </ul>
+    </li>
+    <li><a href="#その他">その他</a></li>
+  </ul>
+</nav>
+            </div>
+        </div>
+        
+        <div class="col-12 col-xxl-9 order-xxl-1 p-4 rounded g222-markdown-content" 
+            style="color:var(--bs-body-color);background-color:var(--bs-body-bg);">
+            <p>WordPressで自社ホームページを管理されている方、総務部や情シスの担当者の方に、最低限、確認しておいてほしいことをまとめます。</p>
+<p>（この記事は、2023年8月時点の情報です。2025年3月に一部時点修正しています。この記事の最後にも書いてありますが、その時々の情報収集を必ずしてください）</p>
+<h2 id="1まず何よりもパスワード">1.まず、何よりもパスワード</h2>
+<p>WordPressのセキュリティ設定で、いちばん大事なのは、パスワードです。</p>
+<p>WordPressの<a href="https://wordpress.org/documentation/article/password-best-practices/">公式ドキュメント</a>では、以下の内容が推奨されています。</p>
+<ul>
+<li>パスワードの文字数は、少なくとも20文字以上（多いほど良い）</li>
+<li>大文字と、小文字を使う</li>
+<li>数字を含める</li>
+<li>特殊記号を含める（ <code>!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[]^_{}|~` </code> ）</li>
+</ul>
+<p>WordPressで、自動生成してくれるパスワードを使っていれば、24文字のランダムな文字列になっているはずです。</p>
+<p>なお、24文字ものパスワードを覚える必要はありません。<br>
+最近は、パスワードマネージャーなどのアプリケーションが利用できます。</p>
+<p>もし現状、会社名など、分かりやすい言葉になっている場合は、そのWordPressを制作した会社にパスワードを変更してもらってください。</p>
+<p>パスワード変更は、簡単にできます。</p>
+<h2 id="2バージョンを最新にする">2.バージョンを最新にする</h2>
+<p>レンタルサーバーを利用している場合、PHPのバージョンを変更できる場合があります。<br>
+AWSやVPSの場合も、当然バージョンアップできます。<br>
+わたしの使っているレンタルサーバーの場合、PHP8.4を利用できます。(2025年3月時点)</p>
+<p>PHPのバージョンは、できるだけ新しい（数字の大きい）方が良いです。<br>
+7よりも8が良く、8.1よりも8.2の方が良いです。<br>
+（レンタルサーバーのコントロールパネルのアクセス権限が無い場合は、権限のある方にPHPのバージョンを聞いてみてください）</p>
+<p>また、WordPressにもバージョンがあります。<br>
+最新は、バージョン6.7.2です(2025年3月時点)。<br>
+可能な限り、バージョンを新しくしてください。</p>
+<p>さらに、WordPress使われているテーマやプラグインにも、それぞれバージョンがあります。<br>
+これもすべて、常に、最新にアップデートされていることが望ましいです。</p>
+<p>WordPressのダッシュボード画面で、<code>更新</code> ボタンを押すと、バージョンアップできるかどうか分かるはずです。</p>
+<p>ただし、バージョンアップ作業は、ときどき不具合を起こすこともあります。<br>
+web制作会社に、頼んでやってもらう方が安全です。</p>
+<p>プラグインの不具合でバージョンアップできない場合、そのサイトの寿命がきているのかもしれません。<br>
+そのときは、リニューアルなどをご検討ください。</p>
+<h2 id="3xml-rpcを無効化する">3.XML-RPCを無効化する</h2>
+<p>バージョンアップできたら、次に、外部からのアクセスについて確認していきます。</p>
+<p>まず、お使いのWordPressサイトで、URLの末尾に <code>xmlrpc.php</code> と入力してみてください。<br>
+（例： サイトURLが <code>https://domain.com/</code> の場合、<code>https://domain.com/xmlrpc.php</code> にアクセス）</p>
+<p>このとき、<code>XML-RPC server accepts POST requests only.</code> と表示された場合、XML-RPCが有効になっており、セキュリティ上のリスクがあるかもしれません。</p>
+<p>逆に、<code>404エラー</code>や<code>403エラー</code>、<code>このページは存在しません。</code> などが表示されたり、トップページにリダイレクトする場合は、この項を読む必要はありません。<br>
+次の「4.ログインを制限する」へ進んでください。</p>
+<h3 id="xml-rpcとは">XML-RPCとは？</h3>
+<p>XML-RPCは、WordPressと外部ツールを連携させる機能です。<br>
+記事の投稿・更新・削除ができるので、とても便利ですが、不正ログインの手口として悪用されることが多く、近年ではこれを無効化するのが推奨されています。</p>
+<p>わたしの管理する別サイトのアクセスログでは、XML-RPCを標的として、1日に50回近い不正ログイン試行が記録されていました。<br>
+（なお、そのサイトは、WordPressで作っていなかったので、すべての不正なアクセスに、404エラーを返却しました。）<br>
+利用しないXML-RPCは、無効化をおすすめします。</p>
+<h3 id="無効化する際の注意点">無効化する際の注意点</h3>
+<p>ただし、一部のアプリやプラグインでは、今もXML-RPCを利用しています。<br>
+このため、いきなり無効化してしまうと、不具合を起こす可能性もあります。</p>
+<p>現在のWordPressでは、XML-RPCと同じようなことができて、しかもセキュリティが強化されているwp-json（REST API）という機能があり、ほとんどの場面で、XML-RPCの無効化は可能なはずです。<br>
+XML-RPCを使っているアプリやプラグインの断捨離も含めて、web制作会社に相談されると良いかもしれません。</p>
+<h2 id="4ログインを制限する">4.ログインを制限する</h2>
+<p>パスワードが十分に複雑で安全な場合でも、何度も試行されると、いずれ不正ログインされる可能性が残ります。<br>
+（「ブルートフォース攻撃」などと呼ばれます）<br>
+（とはいえ、十分に複雑なパスワードは、その割り出しに何年もかかりますから、まず何よりもパスワードが大事なことには、かわりありません）</p>
+<p>ログイン自体を制限することで、さらにセキュリティが向上します。</p>
+<ol>
+<li>ログイン画面へのアクセス制限</li>
+<li>パスワードを一定回数間違えたらロック</li>
+<li>2要素認証の設定</li>
+</ol>
+<p>これら、いずれかの対応をされているか、web制作会社に確認をしてみてください。<br>
+以下、順番に説明します。</p>
+<h3 id="4-1-ログイン画面へのアクセス制限">4-1. ログイン画面へのアクセス制限</h3>
+<p>WordPressの標準設定では、<code>/wp-admin</code>や、<code>/login</code> にアクセスすると、ログイン画面が表示されます。<br>
+サイバー攻撃者がここにアクセスし、ログインIDやパスワードを不正に試す恐れがあります（不正なログインは犯罪です）。</p>
+<p>そのため、ログイン画面へのアクセスを制限することが有効です。<br>
+たとえば、管理者のIPアドレスからのみアクセスできるようにする設定や、SSL通信上でBasic認証をかけるという設定があります。</p>
+<p>IPアドレス制限されているか確認するには、いつも使っている会社のパソコン以外のパソコンから、ログイン画面にアクセスしてみてください。<br>
+アクセスが拒否されれば、適切に設定されています。</p>
+<p>Basic認証されているかを確認するには、これもいつもとは違うパソコンからアクセスし、ログインIDとパスワードを2種類入力することになれば、設定されていることが分かります。</p>
+<p>ただし、IPアドレスは変わることがありますし、Basic認証も管理者が多数いる場合はできない（セキュリティ的にあまり意味が無い）場合もありえます。<br>
+その場合は、以下に示す他の設定をしていただいたうえで、ログインURLを変更することも、保険的な対策になりえます。</p>
+<h3 id="4-2-パスワードを一定回数間違えたらロック">4-2. パスワードを一定回数間違えたらロック</h3>
+<p>ログイン画面にアクセスできたとしても、パスワードの不正入力が繰り返されなければ、セキュリティは向上します。<br>
+そこで、パスワードを一定回数間違えたときに、そのアカウントをロックしてくれる設定があります。</p>
+<p>多くのセキュリティプラグインには、このロック機能が搭載されているので、導入も比較的簡単です。<br>
+この機能が搭載されている場合は、実際にわざと間違えてみて、ロックされるかを試してみてください。</p>
+<h3 id="4-3-2要素認証の設定">4-3. 2要素認証の設定</h3>
+<p>2要素認証というのは、パスワードに加えて、別の方法で本人確認を行う仕組みです。</p>
+<p>一般的には、以下のようなものがあります。</p>
+<ul>
+<li>スマホアプリに認証コードが送られ、それを入力する</li>
+<li>SMSやメールでワンタイムパスワードが送られ、それを入力する</li>
+<li>指紋認証や顔認証</li>
+</ul>
+<p>最近のネット銀行サイトや、クレジットカードサイト、マイナンバーログインなどにも、広く使われているの仕組みなので、利用経験があるかもしれません。</p>
+<p>いずれの方法でも良いのですが、不正なログインを何度も試させないための設定は、あった方が良いです。<br>
+web制作会社などに確認してもらってください。</p>
+<h2 id="その他">その他</h2>
+<p>とりあえず、上記4つを確認してもらえれば、そのサイトのセキュリティ状況は何となく分かると思います。</p>
+<p>その他の設定として、以下のようなこともチェックできたらしてみてください。</p>
+<ul>
+<li>適切なテーマやプラグインが使われているか</li>
+<li>REST APIの公開設定やアクセス制限が適切か</li>
+<li>コメントやお問い合わせにスパム対策がされているか</li>
+<li>バックアップは適切に取られているか</li>
+<li>ログインIDが隠蔽されているか</li>
+<li>ログイン時にひらがな画像認証などが入っているか</li>
+</ul>
+<p>特に、一番上の「適切なテーマやプラグイン」の選定は大事です。</p>
+<p>ところが、「何が適切か」は、経験的な知識であるため、web制作会社のような日常的にWordPressを扱う会社でないと、なかなか分からないものです。</p>
+<p>最低限、</p>
+<ul>
+<li>WordPress公式サイト（wordpress.org）に申請し、掲載されている</li>
+<li>ダウンロード数がそれなりにある</li>
+<li>適切にアップデートされている</li>
+</ul>
+<p>というテーマやプラグインがベターだとは思いますが、そのようなものの中にも、脆弱性が発見されることはあります。<br>
+このことからも、随時バージョンアップをすることは、とても大事です。</p>
+<p>当事務所は、webサイト運営を含め、ITに関するさまざまなご相談を受けていますが、制作自体は請け負いませんので、テーマやプラグイン選定の経験知やノウハウはありません。<br>
+明らかに駄目なものはわかりますが、それが最適かどうかの判断は、ケースバイケースです。<br>
+ご相談を受けた場合は、その都度、制作会社さんの説明を一緒に聞きながら、メリットとデメリットを総合的に判断しています。</p>
+<p>信頼できる制作会社を見つけることは、とても大事なことです。</p>
+<p>2023年6月に、お料理系YouTuberとして有名なリュウジさんのWordPressサイトが、乗っ取り被害を受けて話題になりました。<br>
+その後、リュウジさんはBASEというシステムに乗り換えました。<br>
+無難な判断だと思います。</p>
+<p>WordPressは、導入が簡単なシステムですが、きちんと管理していくのは、実は難しいです。<br>
+管理者の方は、信頼できる制作会社を見つけるか、インハウスでやる場合は、担当部署でのセキュリティ情報の収集をお願いします。</p>
+
+        </div>
+    </div>
+    
+
+    <div style="max-width: 796px;">
+        <div class="p-3">
+            <p>最後までお読みいただき、ありがとうございました。</p>
+            <p>何かお気づきの点がありましたら、 <a href="/contact.html">お問い合わせ</a> ください。</p>
+        </div>
+    </div>
+    
+    <yukimasa-content></yukimasa-content>
+
+        </main>
+        <footer class="g222-footer">
+            <div class="row py-5 my-5 border-top">
+    <div class="col col-12 col-md-4 mb-3">
+        <a href="/">
+            <img src="/favicon.svg" class="mb-3 rounded"
+                style="width:32px;height:auto;"/>
+        </a>
+        <p class="text-body-secondary">
+            Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a><br>
+            &copy; 2026
+        </p>
+    </div>
+    <div class="col col-12 col-sm-6 col-md-3 mb-3">
+        <h3 class="h5">SNS 等</h3>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+                <a href="https://thirdcake.github.io/tools_page/" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/github-mark.svg" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">GitHub</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://atcoder.jp/users/g222" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/atcoder-icon.webp" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">AtCoder</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://qiita.com/g222" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/qiita-icon.webp" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">Qiita</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://www.thirdcake.com/tweets" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/favicon.svg" width="18" height="18" alt="" style="width:1.3em;height:auto;border-radius:var(--bs-border-radius);"/>
+                        <span class="mx-2">つぶやきサイト</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://x.com/g222tech" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/twitter-logo.svg" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">X(Twitter)</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col col-12 col-sm-6 col-md-5 mb-3">
+        <h3 class="h5">つつじ行政書士事務所</h3>
+        <address>〒830-0044<br>
+            福岡県久留米市本町233-2-502</address>
+        <p>ITストラテジストの行政書士です。<br>
+            ご相談等は、<a href="/contact.html">お問い合わせ</a>からお願いします。</p>
+        <p><a href="/privacy.html">プライバシーポリシー</a></p>
+    </div>
+</div>
+
+        </footer>
+    </div>
+</body>
+</html>

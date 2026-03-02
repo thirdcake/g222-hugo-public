@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptのES Moduleについて調べました | つつじ行政書士事務所</title><link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+<script defer src="/js/bootstrap.min.js"></script>
+        <script src="/js/main.js"></script>
+
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+    <div class="container g222-container">
+        <header class="g222-header">
+            <div class="py-5">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column justify-content-start align-items-start">
+            <a href="/" class="">
+                <img src="/favicon.svg" width="1" height="1"
+                    style="width:80px;height:auto;"
+                    class="rounded" alt="">
+            </a>
+            <div class="d-flex flex-nowrap justify-content-start align-items-end">
+                <h1 class="g222-site-title">つつじ行政書士事務所</h1>
+                <color-mode></color-mode>
+            </div>
+        </div>
+        <div class="d-lg-none">
+            <button type="button" class="btn btn-outline-secondary"
+                data-bs-toggle="collapse" data-bs-target="#collapseNav"
+                aria-expanded="false" aria-label="Toggle navigation"
+                aria-controls="collapseNav">
+                <svg viewBox="0 0 16 16" style="width:1.5em;height:auto;">
+                    <use href="/img/icon.svg#menu"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="collapse d-lg-block" id="collapseNav">
+        <nav class="py-4">
+            
+
+<ul class="list-group list-group-flush rounded">
+        <li class="list-group-item">
+            <a class="nav-link" href="/">
+                ホーム
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a aria-current="true" class="ancestor nav-link" href="/archives/">
+                アーカイブ
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a class="nav-link" href="/contact.html">
+                お問い合わせ
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a class="nav-link" href="/about.html">
+                もっと知る
+            </a>
+        </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+
+        </header>
+        <main class="g222-main py-5">
+            
+    <div style="max-width: 796px;">
+        <div class="d-flex flex-column align-items-center pb-5">
+            <h1>JavaScriptのES Moduleについて調べました</h1>
+
+            <div class="d-flex flex-wrap align-items-center py-4" style="gap: .5rem 2rem">
+                <div>
+                    <span>作成日：</span>
+                    
+
+
+
+
+
+<time datetime="2025-01-27T11:31:13&#43;09:00">2025年1月27日（月）</time>
+
+                </div>
+                
+            </div>
+
+            
+                <div class="position-relative" style="max-width:500px; margin-inline:auto;">
+                    <img src="https://img.thirdcake.com/img/5d4ba04b254add76d26a3fe742afaa03/3hutgdpf7qwutsc.webp" alt="大分県の国東半島にある熊野摩崖仏" class="img-fluid" />
+                    
+                    <button type="button" class="btn btn-secondary position-absolute bottom-0 start-0 m-2"
+                        data-bs-toggle="collapse" data-bs-target="#collapseEyecatch" 
+                        aria-expanded="false" aria-controls="collapseEyecatch">ALT</button>
+                    
+                </div>
+                
+                <div class="collapse" id="collapseEyecatch" style="width:100%;max-width:500px; margin-inline:auto;">
+                    <div class="alert alert-secondary mt-2">大分県の国東半島にある熊野摩崖仏</div>
+                </div>
+                
+            
+        </div>
+    </div>
+    <div style="max-width: 796px;"><nav aria-label="breadcrumb"  style="--bs-breadcrumb-divider: '&gt;' " >
+    <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="http://localhost:1313/">ホーム</a>
+    </li>
+    <li class="breadcrumb-item">
+        <a href="http://localhost:1313/archives/">記事一覧</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">
+        JavaScriptのES Moduleについて調べました
+    </li>
+    </ol>
+</nav>
+</div>
+
+    <div class="row">
+        
+        <div class="col-12 col-xxl-3 order-xxl-5 py-5 ps-3">
+            <div class="sticky-xxl-top">
+                <h2 class="h5 pt-4">目次：</h2>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#qiitaに記事を書きました">Qiitaに記事を書きました</a></li>
+    <li><a href="#es-module-とは">ES Module とは</a></li>
+    <li><a href="#esbuild-とは">esbuild とは</a></li>
+    <li><a href="#sassについて">sassについて</a></li>
+  </ul>
+</nav>
+            </div>
+        </div>
+        
+        <div class="col-12 col-xxl-9 order-xxl-1 p-4 rounded g222-markdown-content" 
+            style="color:var(--bs-body-color);background-color:var(--bs-body-bg);">
+            <h2 id="qiitaに記事を書きました">Qiitaに記事を書きました</h2>
+<p>少し前ですが、<a href="https://qiita.com/g222/items/14ff49541c5cdc5cc001">Qiitaに記事を書きました</a>。<br>
+内容としては、AVL木という平衡二分木を可視化するというもので、JavaScriptで書きました。</p>
+<p>そのためには、二分木そのもののプログラムも必要ですが、同時に、それを表示するプログラム、また、操作するプログラムも、一緒に考えなくてはいけません。</p>
+<p>そうすると、プログラムがとても大きくなってしまい、あとから読んだり修正したりするのが、難しくなります。</p>
+<p>読みやすさや修正しやすさのために、通常は、モジュールというものに小分けをすることが一般的です。</p>
+<p>モジュール自体にも、いろいろ種類があるようなのですが、今回は<a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Modules">mdnに書いてある通常のモジュール</a>（いわゆる、ES Module）を使って、小分けすることにしました。</p>
+<h2 id="es-module-とは">ES Module とは</h2>
+<p>JavaScriptのモジュールは、使い方がいくつかあるようなのですが、とりあえずexportとimportだけ使えれば十分です。</p>
+<p>たとえば、<code>parent.js</code> というモジュールから、<code>child.js</code> というファイルに書いてある関数を使いたい場合、以下のようにします。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// parent.js
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> {<span style="color:#a6e22e">someFunc</span>} <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./child.js&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// インポートしたsomeFuncを実行
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">someFunc</span>();
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// child.js
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">someFunc</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 何かしらの実行
+</span></span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> {<span style="color:#a6e22e">someFunc</span>};
+</span></span></code></pre></div><h2 id="esbuild-とは">esbuild とは</h2>
+<p>モジュール化すると、ファイルを分けられるので、プログラムを書く側としては楽になります。<br>
+一方、読み込む側からすると、ファイルが増えるので、読み込みに時間がかかるようになってしまいます。</p>
+<p>できれば、ファイルは１つにまとめたいところです。<br>
+まとめるのが、バンドラと呼ばれるものです。</p>
+<p>有名どころでは、webpackというものですが、調べてみると、最近は<a href="https://esbuild.github.io/">esbuild</a>というものが早いということを知りました。</p>
+<p>esbuildは、node.jsを用意して、ドキュメントの通りにインストールすれば、コマンドラインから使えるようになります。</p>
+<p>バンドルするときに、minify（ファイルの無駄な部分を圧縮する方法）を選択することも可能でした。</p>
+<h2 id="sassについて">sassについて</h2>
+<p>なお、JavaScriptのモジュール化ができるなら、CSSもできます。</p>
+<p>CSSについても、さまざまなプログラムがありますが、最近は、<a href="https://sass-lang.com/dart-sass/">Dart Sass</a>が一般的なようです。</p>
+<p>最近は、素のCSSでも、ネストできるようになるなど、進化しているのでそれほど面倒でもないのかもしれませんが、しかし書くときにものすごい分量のCSSファイルを読むよりは、ファイルが分かれていたほうが便利かなと思います。<br>
+（Tailwindや、CSS in JSは、なんとなく敬遠しています。便利なのかもしれませんが、なんとなく手が出しづらいです。）</p>
+
+        </div>
+    </div>
+    
+
+    <div style="max-width: 796px;">
+        <div class="p-3">
+            <p>最後までお読みいただき、ありがとうございました。</p>
+            <p>何かお気づきの点がありましたら、 <a href="/contact.html">お問い合わせ</a> ください。</p>
+        </div>
+    </div>
+    
+    <yukimasa-content></yukimasa-content>
+
+        </main>
+        <footer class="g222-footer">
+            <div class="row py-5 my-5 border-top">
+    <div class="col col-12 col-md-4 mb-3">
+        <a href="/">
+            <img src="/favicon.svg" class="mb-3 rounded"
+                style="width:32px;height:auto;"/>
+        </a>
+        <p class="text-body-secondary">
+            Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a><br>
+            &copy; 2026
+        </p>
+    </div>
+    <div class="col col-12 col-sm-6 col-md-3 mb-3">
+        <h3 class="h5">SNS 等</h3>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+                <a href="https://thirdcake.github.io/tools_page/" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/github-mark.svg" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">GitHub</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://atcoder.jp/users/g222" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/atcoder-icon.webp" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">AtCoder</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://qiita.com/g222" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/qiita-icon.webp" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">Qiita</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://www.thirdcake.com/tweets" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/favicon.svg" width="18" height="18" alt="" style="width:1.3em;height:auto;border-radius:var(--bs-border-radius);"/>
+                        <span class="mx-2">つぶやきサイト</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="https://x.com/g222tech" class="nav-link p-0 text-body-secondary">
+                    <div class="d-flex align-items-center">
+                        <img src="/img/twitter-logo.svg" width="18" height="18" alt="" style="width:1.3em;height:auto"/>
+                        <span class="mx-2">X(Twitter)</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col col-12 col-sm-6 col-md-5 mb-3">
+        <h3 class="h5">つつじ行政書士事務所</h3>
+        <address>〒830-0044<br>
+            福岡県久留米市本町233-2-502</address>
+        <p>ITストラテジストの行政書士です。<br>
+            ご相談等は、<a href="/contact.html">お問い合わせ</a>からお願いします。</p>
+        <p><a href="/privacy.html">プライバシーポリシー</a></p>
+    </div>
+</div>
+
+        </footer>
+    </div>
+</body>
+</html>

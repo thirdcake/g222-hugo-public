@@ -1,0 +1,18 @@
+.maplibregl-control-container {
+    position: unset;
+}
+
+.maplibregl-popup-content{
+    --_size: 2.5rem;
+    padding-right: calc(5px + var(--_size));
+}
+
+.maplibregl-popup-close-button {
+    margin:0;
+    color: #777;
+    outline: none !important;
+}
+
+.maplibregl-popup-close-button::after {
+    content: none !important;
+}
