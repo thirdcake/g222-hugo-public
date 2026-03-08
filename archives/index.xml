@@ -13,7 +13,7 @@
       <link>https://g222.thirdcake.com/archives/344.html</link>
       <pubDate>Sun, 01 Mar 2026 12:41:33 +0900</pubDate>
       <guid>https://g222.thirdcake.com/archives/344.html</guid>
-      <description>&lt;p&gt;ここ2年ほど、 AtCoder という競技プログラミングを楽しんでいます。&lt;br&gt;&#xA;おもに PHP を使っているのですが、インターネット上に、なかなかちょうどよい記事を見つけられないため、過去の自分が悩んだところを、まとめて置きたいと思います。&lt;/p&gt;</description>
+      <description>&lt;p&gt;ここ2年ほど、 AtCoder という競技プログラミングを楽しんでいます。&lt;br&gt;&#xA;主に PHP を使っているのですが、インターネット検索で見つかる解説記事は、わかりやすさを優先するためか、計算量を犠牲にしたものも多く、なかなか実用的な例を見つけられずに苦労しました。&lt;br&gt;&#xA;そこで、過去の自分が悩んだところ、知りたかったところを、まとめておきたいと思います。&lt;/p&gt;</description>
     </item>
     <item>
       <title>サイトを Hugo に完全移行しました</title>

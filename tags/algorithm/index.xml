@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithm on つつじ行政書士事務所</title>
+    <link>https://g222.thirdcake.com/tags/algorithm/</link>
+    <description>Recent content in Algorithm on つつじ行政書士事務所</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 07 Mar 2026 15:23:25 +0900</lastBuildDate>
+    <atom:link href="https://g222.thirdcake.com/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PHP でダイクストラ法をつくる</title>
+      <link>https://g222.thirdcake.com/archives/344.html</link>
+      <pubDate>Sun, 01 Mar 2026 12:41:33 +0900</pubDate>
+      <guid>https://g222.thirdcake.com/archives/344.html</guid>
+      <description>&lt;p&gt;ここ2年ほど、 AtCoder という競技プログラミングを楽しんでいます。&lt;br&gt;&#xA;主に PHP を使っているのですが、インターネット検索で見つかる解説記事は、わかりやすさを優先するためか、計算量を犠牲にしたものも多く、なかなか実用的な例を見つけられずに苦労しました。&lt;br&gt;&#xA;そこで、過去の自分が悩んだところ、知りたかったところを、まとめておきたいと思います。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
